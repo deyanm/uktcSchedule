@@ -1,9 +1,9 @@
 //
 //  DataTableViewCell.swift
-//  SlideMenuControllerSwift
+//  uktcShedule
 //
-//  Created by Yuji Hato on 11/8/15.
-//  Copyright © 2015 Yuji Hato. All rights reserved.
+//  Created by Deyan Marinov on 10/9/15.
+//  Copyright © 2015 Deyan Marinov. All rights reserved.
 //
 
 import UIKit
@@ -24,8 +24,8 @@ class DataTableViewCell : BaseTableViewCell {
     @IBOutlet weak var dataText: UILabel!
     
     override func awakeFromNib() {
-        self.dataText?.font = UIFont.italicSystemFontOfSize(16)
-        self.dataText?.textColor = UIColor(hex: "9E9E9E")
+        self.dataText?.font = UIFont.systemFontOfSize(22)
+        self.dataText?.textColor = UIColor(hex: "FF3D3D")
     }
  
     override class func height() -> CGFloat {

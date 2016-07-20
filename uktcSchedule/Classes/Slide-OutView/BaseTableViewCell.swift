@@ -1,10 +1,14 @@
 //
 //  BaseTableViewCell.swift
-//  SlideMenuControllerSwift
+//  uktcShedule
 //
-//  Created by Yuji Hato on 1/22/15.
-//  Copyright (c) 2015 Yuji Hato. All rights reserved.
+//  Created by Deyan Marinov on 10/9/15.
+//  Copyright © 2015 Deyan Marinov. All rights reserved.
 //
+//
+//
+//
+
 import UIKit
 
 public class BaseTableViewCell : UITableViewCell {
@@ -31,9 +35,9 @@ public class BaseTableViewCell : UITableViewCell {
     }
     
     public func setData(data: Any?) {
-        self.backgroundColor = UIColor(hex: "F1F8E9")
+        self.backgroundColor = UIColor(hex: "48BAF6")
         self.textLabel?.font = UIFont.italicSystemFontOfSize(18)
-        self.textLabel?.textColor = UIColor(hex: "9E9E9E")
+        self.textLabel?.textColor = UIColor(hex: "000000")
         if let menuText = data as? String {
             self.textLabel?.text = menuText
         }

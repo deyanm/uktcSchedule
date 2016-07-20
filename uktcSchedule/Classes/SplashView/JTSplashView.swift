@@ -1,10 +1,10 @@
 //
 //  JTSplashView.swift
-//  JTSplashView Example
+//  uktcShedule
 //
-//  Created by Jakub Truhlar on 25.07.15.
-//  Copyright (c) 2015 Jakub Truhlar. All rights reserved.
-// i
+//  Created by Deyan Marinov on 10/9/15.
+//  Copyright © 2015 Deyan Marinov. All rights reserved.
+//
 
 import UIKit
 
@@ -22,6 +22,7 @@ class JTSplashView: UIView {
     var vibrateAgain = true
     var completionBlock:(() -> Void)?
     
+    // make the oval rectangle
     var circlePathInitial = UIBezierPath(ovalInRect: CGRect(x: screenSize.width / 2, y: screenSize.height / 2, width: 0.0, height: 0.0))
     var circlePathFinal = UIBezierPath(ovalInRect: CGRect(x: (screenSize.width / 2) - 35.0, y: (screenSize.height / 2) - 35.0, width: 70.0, height: 70.0))
     var circlePathShrinked = UIBezierPath(ovalInRect: CGRect(x: screenSize.width / 2 - 5.0, y: screenSize.height / 2 - 5.0, width: 10.0, height: 10.0))
@@ -238,6 +239,7 @@ class JTSplashView: UIView {
         baseCircleLayer.addAnimation(enlargeAnimation, forKey: nil)
     }
     
+    // how many times to vibrate
     @objc private func vibration() {
         let vibration1: CABasicAnimation = CABasicAnimation(keyPath: "path")
         vibration1.fromValue = circlePathFinal.CGPath

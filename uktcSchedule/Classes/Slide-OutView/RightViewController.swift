@@ -1,8 +1,9 @@
 //
 //  RightViewController.swift
-//  SlideMenuControllerSwift
+//  uktcShedule
 //
-//  Created by Yuji Hato on 12/3/14.
+//  Created by Deyan Marinov on 10/9/15.
+//  Copyright © 2015 Deyan Marinov. All rights reserved.
 //
 
 import UIKit

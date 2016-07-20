@@ -1,0 +1,3 @@
+Pseudo code for UKTC Schedule
+-----Made the prototype-----
+1. 
